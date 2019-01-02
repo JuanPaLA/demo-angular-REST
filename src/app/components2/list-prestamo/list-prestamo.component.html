@@ -1,0 +1,44 @@
+<div class="col">
+  <h2>Prestamos</h2>
+  <button class="btn btn-primary" (click)="addPrestamo()">Agregar Prestamos</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>IdCliente</th>
+        <th>Id Pagos</th>
+        <th>Monto</th>
+        <th>Tasa</th>
+        <th>Monto Saldado</th>
+        <th>Cantidad de Pagos</th>
+        <th>Dias Pagados</th>
+        <th>Dias no pagados</th>
+        <th>Fecha de Inicio</th>
+        <th>Pagos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prestamo of prestamos">
+        <td class="hidden">{{ prestamo.id }}</td>
+        <td>{{ prestamo.idCliente }}</td>
+        <td>{{ prestamo.idPagos }}</td>
+        <td>{{ prestamo.monto }}</td>
+        <td>{{ prestamo.tasa }}</td>
+        <td>{{ prestamo.montosaldado }}</td>
+        <td>{{ prestamo.cantidadpagos }}</td>
+        <td>{{ prestamo.diaspagados }}</td>
+        <td>{{ prestamo.diasnopagados }}</td>
+        <td>{{ prestamo.fechainicio }}</td>
+        <td>{{ prestamo.pagos }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editPrestamo(prestamo)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deletePrestamo(prestamo)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

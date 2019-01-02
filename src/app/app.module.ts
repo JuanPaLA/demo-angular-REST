@@ -1,16 +1,40 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
+import { AddClienteComponent } from './components/add-cliente/add-cliente.component';
+import { EditClienteComponent } from './components/edit-cliente/edit-cliente.component';
+import { ListClienteComponent } from './components/list-cliente/list-cliente.component';
+
+import { AddPrestamoComponent } from './components2/add-prestamo/add-prestamo.component';
+import { EditPrestamoComponent } from './components2/edit-prestamo/edit-prestamo.component';
+import { ListPrestamoComponent } from './components2/list-prestamo/list-prestamo.component';
+
+// Importar rutas
+import { ROUTES } from './app.routes';
+import { RouterModule } from '@angular/router';
+
+// Importar ReactiveFormsModule para los formularios
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddClienteComponent,
+    EditClienteComponent,
+    ListClienteComponent,
+    AddPrestamoComponent,
+    EditPrestamoComponent,
+    ListPrestamoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    RouterModule.forRoot( ROUTES, { useHash: true } ),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

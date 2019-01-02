@@ -1,0 +1,42 @@
+<div class="col">
+  <h2>Clientes</h2>
+  <button class="btn btn-primary" (click)="addCliente()">Agregar Cliente</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th class="hidden">Id</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Celular</th>
+        <th>DNI</th>
+        <th>Teléfono Fijo</th>
+        <th>Domicilio de Cobro</th>
+        <th>Domicilio Secundario</th>
+        <th>Barrio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td class="hidden">{{ cliente.id }}</td>
+        <td>{{ cliente.nombre }}</td>
+        <td>{{ cliente.apellido }}</td>
+        <td>{{ cliente.edad }}</td>
+        <td>{{ cliente.celular }}</td>
+        <td>{{ cliente.dni }}</td>
+        <td>{{ cliente.telfijo }}</td>
+        <td>{{ cliente.domcobro }}</td>
+        <td>{{ cliente.domsec }}</td>
+        <td>{{ cliente.barrio }}</td>
+        <td>
+          <button class="btn btn-success" (click)="editCliente(cliente)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deleteCliente(cliente)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
