@@ -1,5 +1,4 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { ListPrestamoComponent } from './components2/list-prestamo/list-prestamo.component';
 import { AddPrestamoComponent } from './components2/add-prestamo/add-prestamo.component';
@@ -9,14 +8,12 @@ import { ListClienteComponent } from './components/list-cliente/list-cliente.com
 import { AddClienteComponent } from './components/add-cliente/add-cliente.component';
 import { EditClienteComponent } from './components/edit-cliente/edit-cliente.component';
 
-const routes: Routes = [
-  { path: 'prestamos', component: ListPrestamoComponent},
-  { path: 'clientes', component: ListClienteComponent }
+export const routes: Routes = [
+  { path: 'list-prestamos', component: ListPrestamoComponent},
+  { path: 'list-clientes', component: ListClienteComponent },
+  { path: 'add-prestamos', component: AddPrestamoComponent},
+  { path: 'add-clientes', component: AddClienteComponent },
+  { path: 'edit-prestamos', component: EditPrestamoComponent},
+  { path: 'edit-clientes', component: EditClienteComponent }
 ]; 
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
-export const routingComponents=[ListPrestamoComponent, ListClienteComponent, AddClienteComponent, AddPrestamoComponent, EditClienteComponent, EditPrestamoComponent];
