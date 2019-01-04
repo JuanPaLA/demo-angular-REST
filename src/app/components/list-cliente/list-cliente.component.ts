@@ -48,6 +48,6 @@ export class ListClienteComponent implements OnInit {
   }
 
   addCliente(): void {
-    this.router.navigate(['add-cliente']);
+    this.router.navigate(['app-add-cliente']);
   }
 }
