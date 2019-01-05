@@ -24,7 +24,7 @@ export class EditPrestamoComponent implements OnInit {
 
     if ( !prestamoId ) {
       alert('Acción invalida');
-      this.router.navigate(['list-prestamo']);
+      this.router.navigate(['list-prestamos']);
       return;
     }
 
@@ -52,7 +52,7 @@ export class EditPrestamoComponent implements OnInit {
     this.service.updatePrestamo(this.editForm.value)
       .pipe(first())
       .subscribe( data => {
-        this.router.navigate(['list-prestamo']);
+        this.router.navigate(['list-prestamos']);
         swal({
           position: 'top',
           type: 'success',

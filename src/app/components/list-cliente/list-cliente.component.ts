@@ -44,10 +44,10 @@ export class ListClienteComponent implements OnInit {
   editCliente(cliente: Cliente): void {
     localStorage.removeItem('editClienteId');
     localStorage.setItem('editClienteId', cliente.id.toString());
-    this.router.navigate(['edit-cliente']);
+    this.router.navigate(['edit-clientes']);
   }
 
   addCliente(): void {
-    this.router.navigate(['app-add-cliente']);
+    this.router.navigate(['add-clientes']);
   }
 }

@@ -34,7 +34,7 @@ export class AddPrestamoComponent implements OnInit {
   onSubmit() {
     this.service.createPrestamo( this.addForm.value )
       .subscribe(data => {
-        this.router.navigate(['list-prestamo']);
+        this.router.navigate(['list-prestamos']);
         swal({
           position: 'top',
           type: 'success',

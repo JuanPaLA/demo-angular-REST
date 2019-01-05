@@ -44,10 +44,10 @@ export class ListPrestamoComponent implements OnInit {
   editPrestamo(prestamo: Prestamo): void {
     localStorage.removeItem('editPrestamoId');
     localStorage.setItem('editPrestamoId', prestamo.id.toString());
-    this.router.navigate(['edit-prestamo']);
+    this.router.navigate(['edit-prestamos']);
   }
 
   addPrestamo(): void {
-    this.router.navigate(['add-prestamo']);
+    this.router.navigate(['add-prestamos']);
   }
 }

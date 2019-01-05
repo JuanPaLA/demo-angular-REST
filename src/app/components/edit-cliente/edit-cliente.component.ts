@@ -24,7 +24,7 @@ export class EditClienteComponent implements OnInit {
 
     if ( !clienteId ) {
       alert('Acción invalida');
-      this.router.navigate(['list-cliente']);
+      this.router.navigate(['list-clientes']);
       return;
     }
 
@@ -51,7 +51,7 @@ export class EditClienteComponent implements OnInit {
     this.service.updateCliente(this.editForm.value)
       .pipe(first())
       .subscribe( data => {
-        this.router.navigate(['list-cliente']);
+        this.router.navigate(['list-clientes']);
         swal({
           position: 'top',
           type: 'success',

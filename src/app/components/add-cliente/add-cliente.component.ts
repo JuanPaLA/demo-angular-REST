@@ -25,14 +25,15 @@ export class AddClienteComponent implements OnInit {
       dni: ['', Validators.required],
       telfijo: ['', Validators.required],
       domcobro: ['', Validators.required],
-      domsec: ['', Validators.required]
+      domsec: ['', Validators.required],
+      barrio: ['', Validators.required]
     });
   }
 
   onSubmit() {
     this.service.createCliente( this.addForm.value )
       .subscribe(data => {
-        this.router.navigate(['list-cliente']);
+        this.router.navigate(['list-clientes']);
         swal({
           position: 'top',
           type: 'success',
