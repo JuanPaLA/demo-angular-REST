@@ -1,17 +1,3 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
-
-
-
-/*
 import { Routes } from '@angular/router';
 
 import { ListPrestamoComponent } from './components2/list-prestamo/list-prestamo.component';
@@ -29,5 +15,4 @@ export const routes: Routes = [
   { path: 'add-clientes', component: AddClienteComponent },
   { path: 'edit-prestamos', component: EditPrestamoComponent},
   { path: 'edit-clientes', component: EditClienteComponent }
-]; */
-
+]; 

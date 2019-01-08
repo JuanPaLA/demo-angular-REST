@@ -5,8 +5,8 @@ export class Cliente {
     edad: number;
     celular: string;
     dni: number;
-    telfijo: string;
+/*    telfijo: string;
     domcobro: string;
-    domsec: string;
+    domsec: string; */
     barrio: string;
 }

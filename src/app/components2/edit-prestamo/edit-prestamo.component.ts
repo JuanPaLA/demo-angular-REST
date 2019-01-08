@@ -30,7 +30,7 @@ export class EditPrestamoComponent implements OnInit {
 
     this.editForm = this.formBuilder.group({
       id: [],
-      idCliente: ['', Validators.required],
+      idcliente: ['', Validators.required],
       idpagos: ['', Validators.required],
       monto: ['', Validators.required],
       tasa: ['', Validators.required],
@@ -38,7 +38,7 @@ export class EditPrestamoComponent implements OnInit {
       cantidadpagos: ['', Validators.required],
       diaspagados: ['', Validators.required],
       diasnopagados: ['', Validators.required],
-      fechainicio: ['', Validators.required],
+      fechainicio: ['', [Validators.required]],
       pagos: ['', Validators.required]
     });
 

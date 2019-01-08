@@ -18,7 +18,7 @@ export class AddPrestamoComponent implements OnInit {
   ngOnInit() {
     this.addForm = this.formBuilder.group({
       id: [],
-      idCliente: ['', Validators.required],
+      idcliente: ['', Validators.required],
       idpagos: ['', Validators.required],
       monto: ['', Validators.required],
       tasa: ['', Validators.required],

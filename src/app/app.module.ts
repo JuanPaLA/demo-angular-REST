@@ -14,8 +14,8 @@ import { AddClienteComponent } from './components/add-cliente/add-cliente.compon
 import { EditClienteComponent } from './components/edit-cliente/edit-cliente.component';
 
 // Importar rutas
+import { routes } from './app.routes';
 import { RouterModule } from '@angular/router';
-import { routes } from './app-routing.module';
 
 // Importar ReactiveFormsModule para los formularios
 import { ReactiveFormsModule } from '@angular/forms';

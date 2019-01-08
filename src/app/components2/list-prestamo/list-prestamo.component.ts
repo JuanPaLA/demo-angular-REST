@@ -22,7 +22,7 @@ export class ListPrestamoComponent implements OnInit {
     swal({
       title: 'Está seguro?',
       text: `¿Seguro desea eliminar al cliente ${prestamo.id} ${
-        prestamo.idCliente
+        prestamo.idcliente
       }?`,
       type: 'warning',
       showCancelButton: true,

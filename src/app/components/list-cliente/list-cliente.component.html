@@ -10,9 +10,12 @@
         <th>Edad</th>
         <th>Celular</th>
         <th>DNI</th>
-        <th>Teléfono Fijo</th>
+      <!--
+
+      <th>Teléfono Fijo</th>
         <th>Domicilio de Cobro</th>
         <th>Domicilio Secundario</th>
+        -->  
         <th>Barrio</th>
       </tr>
     </thead>
@@ -24,9 +27,11 @@
         <td>{{ cliente.edad }}</td>
         <td>{{ cliente.celular }}</td>
         <td>{{ cliente.dni }}</td>
-        <td>{{ cliente.telfijo }}</td>
+      <!-- 
+<td>{{ cliente.telfijo }}</td>
         <td>{{ cliente.domcobro }}</td>
         <td>{{ cliente.domsec }}</td>
+      -->  
         <td>{{ cliente.barrio }}</td>
         <td>
           <button class="btn btn-success" (click)="editCliente(cliente)">

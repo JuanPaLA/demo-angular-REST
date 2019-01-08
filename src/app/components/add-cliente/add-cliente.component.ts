@@ -23,9 +23,11 @@ export class AddClienteComponent implements OnInit {
       edad: ['', Validators.required],
       celular: ['', Validators.required],
       dni: ['', Validators.required],
+    /*
       telfijo: ['', Validators.required],
       domcobro: ['', Validators.required],
       domsec: ['', Validators.required],
+      */
       barrio: ['', Validators.required]
     });
   }
