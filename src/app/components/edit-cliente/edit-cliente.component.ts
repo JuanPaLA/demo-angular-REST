@@ -35,7 +35,7 @@ export class EditClienteComponent implements OnInit {
       edad: ['', Validators.required],
       celular: ['', Validators.required],
       dni: ['', Validators.required],
-      telfijo: ['', Validators.required],
+      telfijo: [''],
       domcobro: ['', Validators.required],
       domsec: ['', Validators.required],
       barrio: ['', Validators.required]
