@@ -56,7 +56,7 @@ export class EditPrestamoComponent implements OnInit {
         swal({
           position: 'top',
           type: 'success',
-          title: `Cliente modificado con éxito`,
+          title: `Prestamo modificado con éxito`,
           showConfirmButton: false,
           timer: 1500
         });

@@ -1,0 +1,29 @@
+<div class="col">
+  <h2>Pruebas</h2>
+  <button class="btn btn-primary" (click)="addPrueba()">Agregar Prueba</button>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+  <!-- <th class="hidden">{{ prueba.numero1 }}</th>       --> 
+        <th>Numero 1</th>
+        <th>Numero 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prueba of pruebas">
+  <!-- <td class="hidden">{{ prueba.numero1 }}</td>       --> 
+        <td>{{ prueba.numero1 }}</td>
+        <td>{{ prueba.numero2 }}</td>
+        <td>
+          
+          <button class="btn btn-success" (click)="editPrueba(prueba)">
+            Editar
+          </button>
+          <button class="btn btn-danger" (click)="deletePrueba(prueba)">
+            Borrar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

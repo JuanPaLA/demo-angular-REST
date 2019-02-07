@@ -21,7 +21,7 @@ export class ListPrestamoComponent implements OnInit {
   deletePrestamo(prestamo: Prestamo): void {
     swal({
       title: 'Está seguro?',
-      text: `¿Seguro desea eliminar al cliente ${prestamo.id} ${
+      text: `¿Seguro desea eliminar al Prestamo ${prestamo.id} ${
         prestamo.idcliente
       }?`,
       type: 'warning',
@@ -36,7 +36,7 @@ export class ListPrestamoComponent implements OnInit {
           this.prestamos = this.prestamos.filter(c => c !== prestamo);
         });
 
-        swal('Eliminado!', 'Se ha eliminado el cliente.', 'success');
+        swal('Eliminado!', 'Se ha eliminado el Préstamo.', 'success');
       }
     });
   }

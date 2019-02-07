@@ -38,7 +38,7 @@ export class AddPrestamoComponent implements OnInit {
         swal({
           position: 'top',
           type: 'success',
-          title: `Cliente creado con éxito`,
+          title: `Prestamo creado con éxito`,
           showConfirmButton: false,
           timer: 1500
         });

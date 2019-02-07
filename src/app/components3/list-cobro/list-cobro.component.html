@@ -1,0 +1,38 @@
+<div class="col">
+    <h2>Cobros</h2>
+    <button class="btn btn-primary" (click)="addCobro()">Agregar Cobro</button>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="hidden">Id</th>
+          <th>ID Prestamo</th>
+          <th>ID Cliente</th>
+          <th>ID Pago</th>
+          <th>ID Gestor</th>
+          <th>Monto</th>
+          <th>Monto Cobrado </th>
+          <th>Fecha de Cobro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cobro of cobros">
+          <td class="hidden">{{ cobro.id }}</td>  
+          <td>{{ cobro.idprestamo }}</td>
+          <td>{{ cobro.idcliente }}</td>
+          <td>{{ cobro.idpago }}</td> 
+          <td>{{ cobro.idgestor }}</td>
+          <td>{{ cobro.monto }}</td>
+          <td>{{ cobro.montocobrado }}</td>
+          <td>{{ cobro.fechacobro }}</td>
+          <td>
+            <button class="btn btn-success" (click)="editCobro(cobro)">
+              Editar
+            </button>
+            <button class="btn btn-danger" (click)="deleteCobro(cobro)">
+              Borrar
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
